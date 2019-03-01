@@ -1,8 +1,16 @@
+/*/ estilização para todas apginas /*/
 a,span,h1,h2,h3,h4,h5,h6,body,section,footer,p,div,small{
     font-family:Montserrat;
 }
-/*/ vw cols /*/
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+/*/ encerra estilizações para todas paginas /*/
 
+/*/ vw cols /*/
+@media (min-width:960px) {
 .col-md-4 {
     padding: 0 1vw;
     flex: 0 0 29.5vw;
@@ -16,14 +24,8 @@ a,span,h1,h2,h3,h4,h5,h6,body,section,footer,p,div,small{
     flex: 0 0 15.5vw;
     max-width: 15.5vw;
 }
-
 .container {
     max-width: 90vw;
-}
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
 }
 /*/ header /*/
 #box_header li.account_signup a {
@@ -200,6 +202,7 @@ ul {
 #corpo .info .box_info {
     position: relative;
     padding-top: 6vw;
+    width: 90vw;
 }
 #corpo .info .box_info .box_info_img {
     width: 99.4vw;
@@ -239,6 +242,7 @@ ul {
 #corpo .box_statics{
     position:relative;
     padding-top: 7vw;
+    width: 90vw;
 }
 #corpo .info .box_statics .box_static.float_right {
     width: 31.2vw;
@@ -548,30 +552,14 @@ span.link_news_letter a {
     display: table;
 }
 
-
 /*//////       incons parcial !   before and after /////*/
 
-.box_inst strong.strong_icon:before {
-    padding-right: 1.9vw;
-    vertical-align: middle;
-    content: "";
-    background: url("") center left no-repeat;
-    background-size: 1.2vw;
-}
 #corpo .info .box_info a.link_info:after {
     content: "";
     background:url("../img/iconblue4.png") center right no-repeat;;
     padding-left: 2vw;
     background-size: 1.2vw;
     vertical-align: middle;
-}
-
-
-.box_static strong.strong_icon:before{
-    padding-right: 1.9vw;
-    background:url("../img/iconyellow1.png") center left no-repeat;
-    content:"";
-    background-size: 1.2vw;
 }
 .box_static a.link_static:after {
     content: "";
@@ -580,18 +568,36 @@ span.link_news_letter a {
     background-size: 1.2vw;
     vertical-align: middle;
 }
-
-
-.box_inpt strong.strong_icon:before{
-    content:"";
-    padding-right: 1.9vw;
-    background: url("../../imgAPP/icongreen2.png") center left no-repeat;
-    background-size: 1.2vw;
-}
 .box_inpt a.link_inpt:after {
     content: "";
-    background:url("../../imgAPP/icongreen1.png") center right no-repeat;;
+    background:url("../img/icongreen1.png") center right no-repeat;;
     padding-left: 2vw;
     background-size: 1.2vw;
     vertical-align: middle;
+}
+} /*/ encerra media min-width/desktop /*/
+
+@media (max-width:959px){
+    .row {
+        width: 100%;
+        margin: 0;
+    }
+    #section_full .bg_full img {
+        width: 100%;
+    }
+    #corpo .info .box_info_img img {
+        width: 100%;
+    }
+    #footer_primary .background_footer img {
+        width: 100%;
+    }
+    .info {
+        width: 100%;
+    }
+    .info .box_static_img img {
+        width: 100%;
+    }
+    .exception_container .box_inpt .img_right img {
+        width: 100%;
+    }
 }
