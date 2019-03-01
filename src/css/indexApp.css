@@ -555,12 +555,12 @@ span.link_news_letter a {
     padding-right: 1.9vw;
     vertical-align: middle;
     content: "";
-    background: url("../../imgAPP/iconblue1.png") center left no-repeat;
+    background: url("") center left no-repeat;
     background-size: 1.2vw;
 }
 #corpo .info .box_info a.link_info:after {
     content: "";
-    background:url("../../imgAPP/iconblue4.png") center right no-repeat;;
+    background:url("../img/iconblue4.png") center right no-repeat;;
     padding-left: 2vw;
     background-size: 1.2vw;
     vertical-align: middle;
@@ -569,13 +569,13 @@ span.link_news_letter a {
 
 .box_static strong.strong_icon:before{
     padding-right: 1.9vw;
-    background:url("../../imgAPP/iconyellow1.png") center left no-repeat;
+    background:url("../img/iconyellow1.png") center left no-repeat;
     content:"";
     background-size: 1.2vw;
 }
 .box_static a.link_static:after {
     content: "";
-    background:url("../../imgAPP/iconyellow3.png") center right no-repeat;;
+    background:url("../img/iconyellow3.png") center right no-repeat;;
     padding-left: 2vw;
     background-size: 1.2vw;
     vertical-align: middle;
