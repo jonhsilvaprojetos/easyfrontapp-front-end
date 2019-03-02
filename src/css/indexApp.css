@@ -614,7 +614,11 @@ span.link_news_letter a {
     .wrap_content_absolut {
         width: 100%;
     }
-    
+    #corpo .float_left_exception,
+    #corpo .float_right_exception,
+    #corpo .info .container {
+    padding: 0;
+    }
     #corpo .rows_colun_icons .box_col_colum,
     #footer_primary {
         text-align: center;
