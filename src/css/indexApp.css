@@ -11,6 +11,9 @@ ul {
 
 /*/ vw cols /*/
 @media (min-width:960px) {
+.slick-list.draggable {
+        width: 90vw;
+}
 .box_menu_mobile,
 .box_logo_principal{
     display:none;
@@ -391,6 +394,7 @@ ul {
     height: 4vh;
     display: table;
     filter: invert(50%);
+    margin:0 auto;
 }
 
 /*/ news_letter /*/
@@ -617,6 +621,8 @@ span.link_news_letter a {
     }
     #corpo .rows_colun_icons .box_col_colum span.text_colum {
         display:block;
+        padding: 12px 0;
+        color: #808b96;
     }
     #section_full {
         padding-top: 54px;
@@ -649,6 +655,82 @@ span.link_news_letter a {
     #section_full .box_btn.text-center {
         padding: 12px 0;
     }
+    #corpo .box_install {
+        padding-top: 45px;
+        text-align: center;
+        width: 100%;
+    }
+    #corpo .box_install .box_install_flexed span.text_inst {
+        color: #808b96;
+        font-size: 14px;
+        display: block;
+    }
+    #corpo .box_install .box_install_flexed strong.box_text_primary {
+        margin: 10px 0;
+        display: block;
+        color: #2c3e50;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    #corpo .box_install h1.title_box_install {
+        margin: 15px 0 30px 0;
+        text-align: center;
+        font-size: 20px;
+        color: #2c3e50;
+        font-weight: 600;
+    }
+    #corpo .box_install .colum_box_inst {
+        margin: 0 0 40px 0;
+    }
+    #corpo .box_info {
+        padding: 30px 0 45px 0;
+    }
+    #corpo .rows_colun_icons {
+        padding: 34px 0 0 0;
+    }
+    #corpo .rows_colun_icons .box_col_colum {
+        margin: 15px auto;
+        width: 85%;
+        box-shadow: 0px 0px 40px 8px #f0f8ff;
+        padding: 30px 5px 30px 5px;
+    }
+    .exception_container .box_inpt .box_text_inpt small,
+    #corpo .box_info small,
+    #corpo .box_statics small{
+        display: block;
+        color: #808b96;
+        font-size: 14px;
+        margin: 15px 0;
+    }
+    .exception_container .box_inpt .box_text_inpt strong.strong_icon,
+    #corpo .box_info strong.strong_icon,
+    #corpo .box_statics strong.strong_icon{
+        display: block;
+        color: #2c3e50;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .exception_container .box_inpt .box_text_inpt span.title_inpt,
+    .info .box_static span.title_static,
+    .info .box_inst span.title_info {
+        font-weight: 600;
+        color: #2c3e50;
+        display: block;
+        font-size: 16px;
+        margin: 12px 0;
+    }
+    .exception_container .box_inpt .box_text_inpt a.link_inpt,
+    .box_info a.link_info,
+    .box_statics a.link_static{
+        margin: 15px 0;
+        color: #e94d43;
+        font-weight: 700;
+        display: table;
+        font-size: 14px;
+    }
+    .exception_container {
+        padding: 60px 0;
+    }    
     .new_letter_footer {
         padding: 40px 0 0 0;
     }
@@ -659,6 +741,8 @@ span.link_news_letter a {
     .new_letter_footer small {
         color: #808b96;
         font-size: 15px;
+        display: block;
+        padding: 0 12px;
     }
     .new_letter_footer .form-group {
         margin: 12px 0 4px;
@@ -700,6 +784,27 @@ span.link_news_letter a {
     .new_letter_footer .wrap_content_news {
         border: 1px solid #eee;
         padding: 22px 0;
+    }
+    #footer_primary ul.wrap_brand li img {
+        filter: invert(50%);
+        margin:0 auto;
+    }
+    #footer_primary .box_background_mobile_footer {
+        background: url('../img/bginitial.png')center center no-repeat;
+        padding: 25px 0;
+        background-size: cover
+    }
+    #footer_primary .box_text_footer h1.primary_text {
+        margin: 0;
+        color: #fff;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    #footer_primary .box_text_footer span {
+        color: #919397;
+        font-size: 13px;
+        display: block;
+        padding: 19px 10px 33px 10px;
     }
     #footer_end{
         text-align:center;
@@ -927,6 +1032,3 @@ span.link_news_letter a {
 
 
 
-.slick-list.draggable {
-    width: 90vw;
-}
