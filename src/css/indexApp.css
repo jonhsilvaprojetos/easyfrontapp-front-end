@@ -103,6 +103,7 @@ ul {
 }
 #section_full .bg_full img {
     max-width: 100%;
+    min-height: 90vh;
 }
 #section_full .bg_full {
     background: #f9fcff;
