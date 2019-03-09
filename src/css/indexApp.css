@@ -1,18 +1,28 @@
+:root {
+    --mg:0;
+    --lst:none;
+    --pd:0;
+
+    --cgren:#83cd32;
+    --cgrey:#808b96;
+    --cdk:#2c3e50;
+}
+
 /*/ estilização para todas apginas /*/
 a,span,h1,h2,h3,h4,h5,h6,body,section,footer,p,div,small{
     font-family:Montserrat;
 }
 ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    margin: var(--mg);
+    padding: var(--pd);
+    list-style-type: var(--lst);
 }
 /*/ encerra estilizações para todas paginas /*/
 
 /*/ vw cols /*/
 @media (min-width:960px) {
 .slick-list.draggable {
-        width: 90vw;
+    width: 90vw;
 }
 .box_menu_mobile,
 .box_logo_principal{
@@ -37,7 +47,7 @@ ul {
 /*/ header /*/
 #box_header li.account_signup a {
     padding: 0.5vw 1.5vw 0.5vw 1.5vw;
-    border: 1px solid #83cd32;
+    border: 1px solid var(--cgren);
 }
 #box_header {
     padding: 0.9vw 0;
@@ -57,7 +67,7 @@ ul {
     transition:all 0.3s ease-out;
 }
 #box_header ul.box_listagem li a:hover {
-    color: #2c3e50;
+    color: var(--cdk);
 }
 #box_header ul.box_listagem_account li a{
     color: #84919c;
@@ -66,11 +76,11 @@ ul {
     transition:all 0.3s ease-out;
 }
 #box_header li.account_signup a:hover {
-    background: #82cd32;
+    background: var(--cgren);
     color: #fff;
 }
 #box_header li.account_login a:hover {
-    color: #82cd32;
+    color: var(--cgren);
 }
 #box_header .row {
     justify-content: space-between;
@@ -108,7 +118,7 @@ ul {
     display: block;
     line-height: 3vw;
     font-weight: bold;
-    color: #2c3e50;
+    color: var(--cdk);
 }
 #section_full .title_full.text-center small {
     display: block;
@@ -123,14 +133,14 @@ ul {
 #section_full  span.btn_full a {
     color: #fff;
     padding: 1vw 2.5vw 1vw 2.5vw;
-    background: #83cd32;
+    background: var(--cgren);
     font-size: 1.1vw;
     font-weight: 600;
     border-radius: 5px;
     text-decoration:none;
 }
 #section_full span.text_btn a {
-    color: #82cd32;
+    color: var(--cgren);
     text-decoration: underline;
 }
 /*/ corpo /*/
@@ -177,18 +187,18 @@ ul {
     text-align: center;
     margin: 6.5vw 0 5vw 0;
     font-size: 2.1vw;
-    color: #2c3e50;
+    color: var(--cdk);
     font-weight: 600;
 }
 #corpo .box_install strong.box_text_primary {
     display: block;
     padding: 3vw 0 0.6vw;
-    color: #2c3e50;
+    color: var(--cdk);
     font-weight: 600;
     font-size: 1.13vw;
 }
 #corpo .box_install span.text_inst {
-    color: #808b96;
+    color: var(--cgrey);
     font-size: 1vw;
     display: block;
     line-height: 1.8vw;
@@ -220,13 +230,13 @@ ul {
 #corpo .info .box_info span.title_info {
     font-weight: 600;
     font-size: 1.6vw;
-    color: #2c3e50;
+    color: var(--cdk);
     padding-bottom: 1vw;
     display: block;
 }
 #corpo .info .box_info small {
     display: block;
-    color: #808b96;
+    color: var(--cgrey);
     font-size: 1.1vw;
     padding-bottom: 1vw;
 }
@@ -234,7 +244,7 @@ ul {
     font-size: 1vw;
     padding: 0.3vw 0;
     display: block;
-    color: #2c3e50;
+    color: var(--cdk);
     font-weight: 600;
 }
 #corpo .info .box_info a.link_info {
@@ -270,13 +280,13 @@ ul {
 #corpo .info .box_statics span.title_static {
     font-weight: 600;
     font-size: 1.6vw;
-    color: #2c3e50;
+    color: var(--cdk);
     padding-bottom: 1vw;
     display: block;
 }
 #corpo .info .box_statics .box_static small {
     display: block;
-    color: #808b96;
+    color: var(--cgrey);
     font-size: 1.1vw;
     padding-bottom: 1vw;
 }
@@ -284,7 +294,7 @@ ul {
     font-size: 1vw;
     padding: 0.3vw 0;
     display: block;
-    color: #2c3e50;
+    color: var(--cdk);
     font-weight: 600;
 }
 #corpo .info .box_statics a.link_static {
@@ -305,13 +315,13 @@ ul {
 #corpo .exception_container .box_inpt span.title_inpt {
     font-weight: 600;
     font-size: 1.6vw;
-    color: #2c3e50;
+    color: var(--cdk);
     padding-bottom: 1vw;
     display: block;
 }
 #corpo .exception_container .box_inpt small {
     display: block;
-    color: #808b96;
+    color: var(--cgrey);
     font-size: 1.1vw;
     padding-bottom: 1vw;
 }
@@ -319,7 +329,7 @@ ul {
     font-size: 1vw;
     padding: 0.3vw 0;
     display: block;
-    color: #2c3e50;
+    color: var(--cdk);
     font-weight: 600;
 }
 #corpo .exception_container .box_inpt a.link_inpt {
@@ -430,7 +440,7 @@ ul {
     border: 0;
     width: 10vw;
     padding: 0.9vw 0;
-    background: #83cd32;
+    background: var(--cgren);
     border-radius: 5px;
     color: #fff;
     font-weight: 600;
@@ -446,7 +456,7 @@ ul {
 }
 #footer_primary .wrap_content_news small {
     font-size: 1.2vw;
-    color: #808b96;
+    color: var(--cgrey);
     font-weight: 500;
     display: block;
 }
@@ -460,7 +470,7 @@ span.link_news_letter {
     padding: 2vw 0 1vw 0vw;
 }
 span.link_news_letter a {
-    color: #82cd32;
+    color: var(--cgren);
     text-decoration: underline;
     font-size: 1.1vw;
     font-weight: 500;
@@ -495,7 +505,7 @@ span.link_news_letter a {
     display: table;
 }
 #footer_end p.txt_about {
-    color: #808b96;
+    color: var(--cgrey);
     font-size: 1vw;
     margin: 0;
     padding-bottom: 2vw;
@@ -512,12 +522,12 @@ span.link_news_letter a {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.02vw;
-    color: #2c3e50;
+    color: var(--cdk);
     margin-bottom: 1.6vw;
 }
 #footer_end ul.box_footer li a {
     margin: 1vw 0;
-    color: #808b96;
+    color: var(--cgrey);
     text-decoration: none;
     display: table;
     font-size: 1vw;
@@ -528,7 +538,7 @@ span.link_news_letter a {
 }
 #footer_end li.number_footer a {
     font-weight: 600;
-    color: #808b96;
+    color: var(--cgrey);
     font-size: 1.1vw;
     letter-spacing: 0.09vw;
 }
@@ -537,7 +547,7 @@ span.link_news_letter a {
 }
 #footer_end li.mail_footer a {
     font-size: 1.1vw;
-    color: #83cd32;
+    color: var(--cgren);
     font-weight: 500;
 }
 #footer_end ul.box_socials_footer {
@@ -552,7 +562,7 @@ span.link_news_letter a {
     display: table;
 }
 #footer_end ul.box_socials_footer i:hover {
-    color: #83cd32;
+    color: var(--cgren);
 }
 #footer_end ul.box_socials_footer li {
     margin: 0 2vw 0 0;
@@ -626,7 +636,7 @@ span.link_news_letter a {
     #corpo .rows_colun_icons .box_col_colum span.text_colum {
         display:block;
         padding: 12px 0;
-        color: #808b96;
+        color: var(--cgrey);
     }
     #section_full {
         padding-top: 54px;
@@ -645,7 +655,7 @@ span.link_news_letter a {
         font-size: 20px;
         line-height: 25px;
         font-weight: bold;
-        color: #2c3e50;
+        color: var(--cdk);
     }
     #section_full span.btn_full a {
         color: #fff;
@@ -665,14 +675,14 @@ span.link_news_letter a {
         width: 100%;
     }
     #corpo .box_install .box_install_flexed span.text_inst {
-        color: #808b96;
+        color: var(--cgrey);
         font-size: 14px;
         display: block;
     }
     #corpo .box_install .box_install_flexed strong.box_text_primary {
         margin: 10px 0;
         display: block;
-        color: #2c3e50;
+        color: var(--cdk);
         font-weight: 600;
         font-size: 16px;
     }
@@ -680,7 +690,7 @@ span.link_news_letter a {
         margin: 15px 0 30px 0;
         text-align: center;
         font-size: 20px;
-        color: #2c3e50;
+        color: var(--cdk);
         font-weight: 600;
     }
     #corpo .box_install .colum_box_inst {
@@ -702,7 +712,7 @@ span.link_news_letter a {
     #corpo .box_info small,
     #corpo .box_statics small{
         display: block;
-        color: #808b96;
+        color: var(--cgrey);
         font-size: 14px;
         margin: 15px 0;
     }
@@ -710,7 +720,7 @@ span.link_news_letter a {
     #corpo .box_info strong.strong_icon,
     #corpo .box_statics strong.strong_icon{
         display: block;
-        color: #2c3e50;
+        color: var(--cdk);
         font-weight: 600;
         font-size: 15px;
     }
@@ -718,7 +728,7 @@ span.link_news_letter a {
     .info .box_static span.title_static,
     .info .box_inst span.title_info {
         font-weight: 600;
-        color: #2c3e50;
+        color: var(--cdk);
         display: block;
         font-size: 16px;
         margin: 12px 0;
@@ -743,7 +753,7 @@ span.link_news_letter a {
         margin: 0;
     }
     .new_letter_footer small {
-        color: #808b96;
+        color: var(--cgrey);
         font-size: 15px;
         display: block;
         padding: 0 12px;
@@ -770,7 +780,7 @@ span.link_news_letter a {
         border: 0;
         width: 25%;
         padding: 11px;
-        background: #83cd32;
+        background: var(--cgren);
         border-radius: 5px;
         color: #fff;
         font-weight: 400;
@@ -780,7 +790,7 @@ span.link_news_letter a {
         outline: none;
     }
     .new_letter_footer span.link_news_letter a {
-        color: #82cd32;
+        color: var(--cgren);
         text-decoration: underline;
         font-size: 13px;
         font-weight: 500;
@@ -822,14 +832,14 @@ span.link_news_letter a {
     #footer_end .box_footer_end span.copy_footer {
         padding: 5px 0 38px;
         display: block;
-        color: #808b96;
+        color: var(--cgrey);
         font-size: 13px;
     }
     #footer_end .box_footer_end h1.title_footer {
         font-size: 17px;
         font-weight: 600;
         text-transform: uppercase;
-        color: #2c3e50;
+        color: var(--cdk);
     }
     #footer_end ul.box_footer {
         margin-bottom: 30px;
@@ -844,11 +854,11 @@ span.link_news_letter a {
         margin: 0 10px;
     }
     #footer_end .box_footer_end ul.box_footer a {
-        color: #808b96;
+        color: var(--cgrey);
         font-size: 15px;
     }
     #footer_end ul.box_footer_contact li.calback_footer {
-        color: #808b96;
+        color: var(--cgrey);
         font-size: 15px;
     }
     #footer_end ul.box_socials_footer .fab {
@@ -858,18 +868,18 @@ span.link_news_letter a {
     }
     #footer_end ul.box_footer_contact .mail_footer a {
         font-size: 15px;
-        color: #83cd32;
+        color: var(--cgren);
         font-weight: 500;
     }
     #footer_end ul.box_footer_contact .number_footer a {
-        color: #808b96;
+        color: var(--cgrey);
         font-size: 15px;
         font-weight: 600;
         margin: 14px 0 7px;
         display: block;
     }
     #footer_end .box_footer_about p.txt_about {
-        color: #808b96;
+        color: var(--cgrey);
         font-size: 15px;
         padding-top: 22px;
     }
